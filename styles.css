@@ -1,0 +1,12 @@
+.container{
+    width: 96%;
+    height: 80vh;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+.chart{
+    height: 100%;
+    width: 80%;
+}
