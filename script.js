@@ -8,7 +8,7 @@ var myChart = new Chart(ctx, {
         label: "Revenue",
         data: [12, 19, 3, 5, 2, 3],
         borderColor: ["#348F6C"],
-        borderWidth: 3,
+        borderWidth: 4,
       },
     ],
   },
@@ -18,6 +18,7 @@ var myChart = new Chart(ctx, {
     scales: {
       y: {
         beginAtZero: true,
+        max: 20,
       },
     },
     plugins: {
@@ -33,6 +34,11 @@ var myChart = new Chart(ctx, {
         hoverRadius: 10,
         hoverBorderWidth: 3
       },
+      line: {
+        tension: 0,
+        backgroundColor: "rgb(70, 194, 146, 0.5)",
+        fill: true
+      }
     },
   },
 });
